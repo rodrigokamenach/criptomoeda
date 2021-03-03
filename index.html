@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>API Criptomoedas</title>
+    <style>
+        .wrapper {
+            background-image: url(src/fundo.jpg);
+            width: 100%;
+        }
+
+        .lista {
+            display: grid; 
+            grid-template-columns: repeat(4, 1fr); 
+            grid-auto-rows: auto; 
+            grid-gap: 1rem;            
+        }
+
+        .card {
+            margin: 1rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <script src="api.js"></script>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Lista de Criptomoedas</a>
+            </div>
+        </nav>       
+        <div id="conteudo" class="container"></div>        
+        
+    </div>
+</body>
+</html>
